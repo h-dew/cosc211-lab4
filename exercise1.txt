@@ -1,0 +1,11 @@
+# Benjamin Scown - 62071873
+# Exercise 1
+
+1. 
+	0x10010070
+	
+2.
+	Because `beq` is an I-type instruction, the 16 least significant bits are used an immediate value. The 9 represents the 4 least significant bytes in the instruction, and because of the small size of this immediate value, only these 4 bits are needed. Therefore, 9 is our immediate value.
+	
+3.
+	To better examine this instruction, we'll break it into binary. The converted value is: 0000 1000 0001 0000 0000 0000 1111. This is a J-type instruction and is broken up into two parts, the 6 most significant bits being the opcode, and the rest being an immediate value. The binary value of the opcode is 00 0010, which converts into the hex value 0x2, corresponding to the opcode for a `j` instruction. The rest of the bits are an immediate value.
